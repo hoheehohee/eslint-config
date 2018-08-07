@@ -1,34 +1,14 @@
-# @zlatjs/style-config
+# ESLint Example
 
-## Installation
-
-```
-$ npm i @zlatjs/stylelint-config
-```
-
-## Usage
-
-package.json
+프로젝트 내부에 `.eslintrc` 파일 생성 후 아래 코드를 추가
 
 ```
-"script": {
-  ... ,
-  "stylelint": "style '${url}'"
-}
-```
-
-
-.stylelintrc.json
-
-```
-{
-  "extends": "@zlatjs/stylelint-config",
-  "settings": {
-    "import/resolver": {
-      "node": {
-        "paths": "./src"
+  {
+    "extends": "eslint-config-zlatjs2",
+    "settings": {
+      "import/resolver": {
+        node: { paths: [path.resolve('./src')] }
       }
     }
   }
-}
 ```
