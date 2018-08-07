@@ -3,6 +3,7 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
@@ -2134,3 +2135,5 @@ yargs-parser@^10.0.0:
   dependencies:
     camelcase "^4.1.0"
 >>>>>>> 918c94a3d2e4e4aec60d2c1ec4619c22d0da84bb
+=======
+>>>>>>> feature/settings

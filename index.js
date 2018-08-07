@@ -1,55 +1,38 @@
 module.exports = {
-  plugins: [
-    'stylelint-scss',
-    'stylelint-selector-bem-pattern'
+  extends: [
+    'eslint-config-airbnb',
+    'react-app'
   ],
-  "defaultSeverity": "warning",
-  "rules": {
-    "font-family-no-duplicate-names": true,
-    "font-family-no-missing-generic-family-keyword": true,
-    "function-calc-no-unspaced-operator": true,
-    "string-no-newline": true,
-    "declaration-block-no-shorthand-property-overrides": true,
-    "selector-max-id": 0,
-    "indentation": 2,
-    "selector-list-comma-newline-after": "always",
-    "declaration-colon-space-after": "always",
-    "declaration-colon-space-before": "never",
-    "block-opening-brace-space-before": "always",
-    "declaration-block-single-line-max-declarations": 1,
-    "plugin/selector-bem-pattern": {
-      "componentName": "[A-Z]+",
-      "componentSelectors": {
-        "initial": "^\\.{componentName}(?:-[a-z]+)?$",
-        "combined": "^\\.combined-{componentName}-[a-z]+$"
-      },
-      "utilitySelectors": "^\\.util-[a-z]+$"
-    },
-    "declaration-property-value-blacklist": {
-      "/^border/": ["none"]
-    },
-    "at-rule-blacklist": ["extend"],
-    "max-nesting-depth": 3,
-    "declaration-no-important": true,
-    "selector-max-compound-selectors": 3,
-    "selector-no-qualifying-type": true,
-    "no-duplicate-selectors": true,
-    "block-no-empty": true,
-    "at-rule-name-case": "lower",
-    "color-hex-case": "lower",
-    "color-hex-length": "long",
-    "color-no-invalid-hex": true,
-    "string-quotes": "single",
-    "value-no-vendor-prefix": true,
-    "value-list-comma-space-after": "always-single-line",
-    "shorthand-property-no-redundant-values": true,
-    "comment-whitespace-inside": "always",
-    "function-comma-space-after": "always-single-line",
-    "function-comma-space-before": "never",
-    "length-zero-no-unit": true,
-    "number-no-trailing-zeros": true,
-    "declaration-block-trailing-semicolon": "always",
-    "declaration-block-no-duplicate-properties": true,
-    "scss/selector-no-redundant-nesting-selector": true
+  plugins: [
+    'import',
+    'react'
+  ],
+  rules: {
+    'react/jsx-no-bind': 0,
+    'react/prop-types': 1,
+    'react/prefer-stateless-function': [1, { 'ignorePureComponents': true}],
+    'react/no-array-index-key': 0,
+    'react/jsx-filename-extension': 0,
+    'react/jsx-indent': [1, 2],
+    'react/jsx-indent-props': [2, 2],
+    'react/forbid-prop-types': 0,
+    'react/default-props-match-prop-types': 0,
+    'react/sort-comp': 0,
+    'import/no-unresolved': 0,
+    'import/extensions': 0,
+    'arrow-body-style': [2, 'as-needed'],
+    'comma-dangle': [2, { 'functions': 'never'}],
+    'function-paren-newline': [0, 'always'],
+    'indent': [2, 2, { 'SwitchCase': 1 }],
+    'no-mixed-spaces-and-tabs': 2,
+    'no-undef': 0,
+    'no-use-before-define': ['error', { 'functions': true, 'classes': true,  'variables': false  }],
+    'jsx-a11y/href-no-hash': 0,
+    'jsx-a11y/anchor-is-valid': 0,
+    'object-curly-newline': 0,
+    'no-console': 1,
+    'one-var': 0,
+    'no-unresolved': 0,
+    'extensions': 0,
   }
 };

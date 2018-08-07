@@ -1,29 +1,37 @@
 {
-  "name": "@zlatjs/stylelint-config",
+  "name": "@zlatjs/eslint-config",
   "version": "1.1.0",
-  "description": "SCSS modules config for stylelint",
+  "description": "zlatjs eslint config example",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zlatjs2/stylelint-config.git"
+    "url": "git+https://github.com/zlatjs2/eslint-config.git"
   },
   "keywords": [
-    "stylelint",
-    "stylelint-config",
-    "scss",
-    "bem"
+    "eslint",
+    "eslintconfig",
+    "javascript",
+    "react",
+    "styleguide"
   ],
-  "author": "zlatjs <seonmidev@gmail.com>",
+  "author": "zlatjs",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zlatjs2/stylelint-config/issues"
+    "url": "https://github.com/zlatjs2/eslint-config/issues"
   },
-  "homepage": "https://github.com/zlatjs2/stylelint-config#readme",
+  "homepage": "https://github.com/zlatjs2/eslint-config#readme",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
   "dependencies": {
-    "stylelint-scss": "^3.2.0",
-    "stylelint-selector-bem-pattern": "^2.0.0"
+    "eslint": "^4.18.2",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.1.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-react-app": "^2.1.0"
   }
 }
